@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import CharacterList from "../components/CharacterList";
+import CharacterSearch from "../components/CharacterSearch";
 
 const CharacterContainer = () => {
     const [characters, setCharacters] = useState([]);
@@ -20,6 +21,7 @@ const CharacterContainer = () => {
     return (
         <>
             <h1>The world of harry potter characters</h1>
+            <CharacterSearch />
             <CharacterList characters={characters} />
         </>
     );
