@@ -20,7 +20,7 @@ const CharacterContainer = () => {
     return (
         <>
             <h1>The world of harry potter characters</h1>
-            <CharacterList />
+            <CharacterList characters={characters} />
         </>
     );
 };
