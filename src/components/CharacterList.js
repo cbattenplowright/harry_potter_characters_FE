@@ -1,3 +1,4 @@
+import "./CharacterList.css";
 import Character from "./Character";
 
 const CharacterList = ({ characters }) => {
@@ -5,10 +6,10 @@ const CharacterList = ({ characters }) => {
         return <Character key={character.id} character={character} />;
     });
     return (
-        <>
+        <div>
             <h2>Character List:</h2>
-            {characterList}
-        </>
+            <div className="character-list">{characterList}</div>
+        </div>
     );
 };
 
