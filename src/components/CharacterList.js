@@ -6,7 +6,7 @@ const CharacterList = ({ characters }) => {
     });
     return (
         <>
-            <h3>Character List:</h3>
+            <h2>Character List:</h2>
             {characterList}
         </>
     );

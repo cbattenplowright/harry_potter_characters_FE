@@ -1,16 +1,20 @@
 const Character = ({ character }) => {
+    const capitaliseWord = (word) => {
+        return word.charAt(0).toUpperCase() + word.substring(1);
+    };
+
     return (
         <>
-            <h5>{character.name}</h5>
+            <h3>{character.name}</h3>
             <img
                 src={character.image}
                 alt={`Image of ${character.name}`}
                 width={163}
                 height={227}
             />
-            <p>Species: {character.species}</p>
-            <p>Gender: {character.gender}</p>
-            <p>Ancestry: {character.ancestry}</p>
+            <p>Species: {capitaliseWord(character.species)}</p>
+            <p>Gender: {capitaliseWord(character.gender)}</p>
+            <p>Ancestry: {capitaliseWord(character.ancestry)}</p>
             <p>House: {character.house}</p>
         </>
     );
